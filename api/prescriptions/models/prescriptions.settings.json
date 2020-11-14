@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prescriptions",
+  "info": {
+    "name": "Prescriptions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "issue_date": {
+      "type": "date",
+      "required": true
+    },
+    "expiry_date": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "prescriptions"
+    },
+    "product": {
+      "via": "prescriptions",
+      "model": "products"
+    }
+  }
+}
