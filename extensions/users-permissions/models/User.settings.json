@@ -73,6 +73,10 @@
     "prescriptions": {
       "via": "users_permissions_user",
       "collection": "prescriptions"
+    },
+    "consultations": {
+      "via": "users_permissions_user",
+      "collection": "consultation"
     }
   }
 }

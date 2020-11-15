@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_consultation_hairs",
+  "info": {
+    "name": "Hair",
+    "icon": "grin-alt"
+  },
+  "options": {},
+  "attributes": {
+    "photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "hair_description": {
+      "type": "enumeration",
+      "enum": [
+        "bigger_forehead",
+        "mild_receding",
+        "medium_receding",
+        "thinning_on_crown",
+        "thinning_and_receding",
+        "no_hair_on_top"
+      ]
+    }
+  }
+}

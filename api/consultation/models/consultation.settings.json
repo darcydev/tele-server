@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consultations",
+  "info": {
+    "name": "Consultation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "consultations"
+    },
+    "category": {
+      "model": "categories",
+      "via": "consultations"
+    }
+  }
+}

@@ -27,8 +27,8 @@
       "type": "string"
     },
     "category": {
-      "model": "categories",
-      "via": "products"
+      "via": "products",
+      "model": "categories"
     },
     "image": {
       "model": "file",
