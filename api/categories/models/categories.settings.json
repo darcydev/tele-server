@@ -19,10 +19,6 @@
     "products": {
       "collection": "products",
       "via": "category"
-    },
-    "consultations": {
-      "via": "category",
-      "collection": "consultation"
     }
   }
 }

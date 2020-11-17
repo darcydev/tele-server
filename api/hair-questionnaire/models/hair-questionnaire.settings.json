@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hair_questionnaires",
+  "info": {
+    "name": "Consultation Hair",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "general": {
+      "type": "component",
+      "repeatable": false,
+      "component": "questionnaire.consultation"
+    },
+    "patient_photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "hair_description": {
+      "type": "enumeration",
+      "enum": [
+        "level_1",
+        "level_2",
+        "level_3",
+        "level_4",
+        "level_5",
+        "level_6"
+      ]
+    },
+    "hair_loss_family_history": {
+      "type": "boolean"
+    },
+    "notice_hair_loss": {
+      "type": "enumeration",
+      "enum": [
+        "type_1",
+        "type_2",
+        "type_3",
+        "type_4"
+      ]
+    },
+    "body_hair": {
+      "type": "enumeration",
+      "enum": [
+        "level_1",
+        "level_2",
+        "level_3",
+        "level_4",
+        "level_5"
+      ]
+    },
+    "previous_hair_medication": {
+      "type": "boolean"
+    },
+    "previous_medications": {
+      "type": "enumeration",
+      "enum": [
+        "doctor_prescribed_treatment",
+        "rogaine_or_topical_minoxidil",
+        "vitamins",
+        "hair_loss_shampoo",
+        "other"
+      ]
+    },
+    "previous_medications_results": {
+      "type": "boolean"
+    },
+    "previous_medication_side_effects": {
+      "type": "boolean"
+    },
+    "previous_medication_side_effects_description": {
+      "type": "text"
+    },
+    "currently_taking_medication": {
+      "type": "boolean"
+    },
+    "current_medication_description": {
+      "type": "text"
+    },
+    "family_history_prostate_issues": {
+      "type": "boolean"
+    }
+  }
+}

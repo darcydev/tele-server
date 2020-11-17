@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/prescriptions",
-      "handler": "prescriptions.find",
+      "path": "/consultation-herpes",
+      "handler": "consultation-herpes.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/prescriptions/count",
-      "handler": "prescriptions.count",
+      "path": "/consultation-herpes/count",
+      "handler": "consultation-herpes.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/prescriptions/:id",
-      "handler": "prescriptions.findOne",
+      "path": "/consultation-herpes/:id",
+      "handler": "consultation-herpes.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/prescriptions",
-      "handler": "prescriptions.create",
+      "path": "/consultation-herpes",
+      "handler": "consultation-herpes.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/prescriptions/:id",
-      "handler": "prescriptions.update",
+      "path": "/consultation-herpes/:id",
+      "handler": "consultation-herpes.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/prescriptions/:id",
-      "handler": "prescriptions.delete",
+      "path": "/consultation-herpes/:id",
+      "handler": "consultation-herpes.delete",
       "config": {
         "policies": []
       }

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/consultations",
-      "handler": "consultation.find",
+      "path": "/hair-questionnaires",
+      "handler": "hair-questionnaire.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/consultations/count",
-      "handler": "consultation.count",
+      "path": "/hair-questionnaires/count",
+      "handler": "hair-questionnaire.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/consultations/:id",
-      "handler": "consultation.findOne",
+      "path": "/hair-questionnaires/:id",
+      "handler": "hair-questionnaire.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/consultations",
-      "handler": "consultation.create",
+      "path": "/hair-questionnaires",
+      "handler": "hair-questionnaire.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/consultations/:id",
-      "handler": "consultation.update",
+      "path": "/hair-questionnaires/:id",
+      "handler": "hair-questionnaire.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/consultations/:id",
-      "handler": "consultation.delete",
+      "path": "/hair-questionnaires/:id",
+      "handler": "hair-questionnaire.delete",
       "config": {
         "policies": []
       }

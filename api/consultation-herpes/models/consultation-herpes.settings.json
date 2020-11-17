@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consultation_herpes",
+  "info": {
+    "name": "Consultation Herpes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "herpes_previously_diagnosed": {
+      "type": "boolean"
+    },
+    "general": {
+      "type": "component",
+      "repeatable": false,
+      "component": "questionnaire.consultation"
+    },
+    "type_of_hsv": {
+      "type": "enumeration",
+      "enum": [
+        "hsv_1",
+        "hsv_2",
+        "hsv_1_and_hsv_2",
+        "not_sure"
+      ]
+    },
+    "what_approach_would_you_like": {
+      "type": "enumeration",
+      "enum": [
+        "type_1",
+        "type_2",
+        "type_3"
+      ]
+    },
+    "how_often_outbreaks": {
+      "type": "enumeration",
+      "enum": [
+        "level_1",
+        "level_2",
+        "level_3"
+      ]
+    }
+  }
+}

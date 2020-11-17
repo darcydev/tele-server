@@ -1,0 +1,100 @@
+{
+  "collectionName": "components_questionnaire_consultations",
+  "info": {
+    "name": "General Questions",
+    "icon": "laptop-medical",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "approved_by_doctor": {
+      "type": "boolean"
+    },
+    "prescription": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "prescription_issue_date": {
+      "type": "date"
+    },
+    "prescription_expiry_date": {
+      "type": "date"
+    },
+    "category": {
+      "model": "categories"
+    },
+    "patient_gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ],
+      "required": true
+    },
+    "patient_smoking": {
+      "type": "enumeration",
+      "enum": [
+        "often",
+        "sometimes",
+        "rarely",
+        "never"
+      ]
+    },
+    "patient_height": {
+      "type": "integer"
+    },
+    "patient_weight": {
+      "type": "integer"
+    },
+    "current_mood": {
+      "type": "enumeration",
+      "enum": [
+        "level_1",
+        "level_2",
+        "level_3",
+        "level_4",
+        "level_5"
+      ]
+    },
+    "any_allergy": {
+      "type": "boolean"
+    },
+    "allergy_description": {
+      "type": "text"
+    },
+    "mental_disorders": {
+      "type": "enumeration",
+      "enum": [
+        "depression",
+        "anxiety",
+        "bipolar",
+        "psychotic_disorder",
+        "other",
+        "none"
+      ]
+    },
+    "recent_or_major_surgery": {
+      "type": "boolean"
+    },
+    "recent_or_major_surgery_description": {
+      "type": "text"
+    },
+    "other_comments_to_doctor": {
+      "type": "text"
+    },
+    "postcode": {
+      "type": "integer"
+    }
+  }
+}
